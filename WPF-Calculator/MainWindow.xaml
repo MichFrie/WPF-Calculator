@@ -49,6 +49,7 @@
             <Button Name="B2" Click="NumericButton_Click" Grid.Column="5" Grid.Row="4">2</Button>
             <Button Name="B3" Click="NumericButton_Click" Grid.Column="6" Grid.Row="4">3</Button>
             <Button Name="B0" Click="NumericButton_Click" Grid.Column="4" Grid.Row="5">0</Button>
+            <!--Operating Buttons-->
             <Button Name="BPeriod" Click="NumericButton_Click" Grid.Column="5" Grid.Row="5">.</Button>
             <Button Name="BPlusMinus" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="6" Grid.Row="5">+/-</Button>
             <Button Name="BDevide" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="7" Grid.Row="2">/</Button>
@@ -57,7 +58,7 @@
             <Button Name="BPlus" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="7" Grid.Row="5">+</Button>
             <Button Name="BSqrt" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="8" Grid.Row="2" ToolTip="Usage: 'A Sqrt'">Sqrt</Button>
             <Button Name="BPercent" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="8" Grid.Row="3" ToolTip="Usage: 'A % B ='">%</Button>
-            <Button Name="BOneOver" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="8" Grid.Row="4" ToolTip="Usage: 'A 1/X'">1/X</Button>
+            <Button Name="BReciprocal" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="8" Grid.Row="4" ToolTip="Usage: 'A 1/X'">1/X</Button>
             <Button Name="BEqual" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="8" Grid.Row="5">=</Button>
             <Button Name="BC" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="8" Grid.Row="1" ToolTip="Clear All">C</Button>
             <Button Name="BCE" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="7" Grid.Row="1" ToolTip="Clear Current Entry">CE</Button>
@@ -65,6 +66,9 @@
             <Button Name="BMemRecall" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="3" Grid.Row="3" ToolTip="Recall Memory">MR</Button>
             <Button Name="BMemSave" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="3" Grid.Row="4" ToolTip="Store in Memory">MS</Button>
             <Button Name="BMemPlus" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="3" Grid.Row="5" ToolTip="Add To Memory">M+</Button>
+            <TextBox Name="BMemBox" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="4" Margin="10 10"></TextBox>
+            <local:TextBoxHandling x:Name="DisplayBox" Grid.ColumnSpan="9" Height="40" Margin="10"/>
+            <local:TextBoxHandling x:Name="PaperBox" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Margin="10" />
         </Grid>
     </DockPanel>
 </Window>
