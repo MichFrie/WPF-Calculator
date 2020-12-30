@@ -5,14 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <DockPanel>
+        Title="WPF-Calculator" Height="450" Width="800">
+    <DockPanel Name="TopPanelMenu">
         <Menu DockPanel.Dock="Top" Height="20">
             <MenuItem Header="File">
                 <MenuItem Header="Exit" Click="OnMenuExit"/>
-            </MenuItem>
-            <MenuItem Header="View">
-                <MenuItem Header="StandardMenu" Click="OnMenuView" IsCheckable="True" IsChecked="True"/>
             </MenuItem>
             <MenuItem Header="Help">
                 <MenuItem Header="About" Click="OnMenuAbout"/>
@@ -68,7 +65,7 @@
             <Button Name="BMemPlus" Click="OperatingButton_Click" Background="Darkgray" Grid.Column="3" Grid.Row="5" ToolTip="Add To Memory">M+</Button>
             <TextBox Name="BMemBox" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="4" Margin="10 10"></TextBox>
             <local:TextBoxHandling x:Name="DisplayBox" Grid.ColumnSpan="9" Height="40" Margin="10"/>
-            <local:TextBoxHandling x:Name="PaperBox" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Margin="10" />
+            <local:TextBoxHandling x:Name="CalculationResults" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Margin="10" />
         </Grid>
     </DockPanel>
 </Window>
